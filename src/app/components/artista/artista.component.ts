@@ -11,6 +11,7 @@ export class ArtistaComponent {
   
   //Artista objeto vacio
   artista: any = {};
+  topTrask: any[] = [];
   loadingArtist: boolean; //icono cargando
 
   constructor(private router: ActivatedRoute, private spotify: SpotifyService) { 
@@ -19,6 +20,7 @@ export class ArtistaComponent {
     this.router.params.subscribe(params => {//suscribirse a cambios en el parametro url
         
       this.getArtista(params['id']);
+      this.getTopTracks(params['id']);
     });
 
   }
@@ -35,6 +37,20 @@ export class ArtistaComponent {
             this.loadingArtist = false;
           });
   }
+  
+  //Mejores pistas
+  getTopTracks(id: string){
+
+    this.spotify.getTopTracks(id)
+                .subscribe(topTracks => {
+                  console.log(topTracks);
+                  this.topTrask = topTracks;
+                  
+                });
+  }
+
+
+
   
 
 }

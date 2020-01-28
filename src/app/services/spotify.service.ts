@@ -10,14 +10,23 @@ export class SpotifyService {
     console.log('Spotify Service Listo');
     
   }
-
+  
+  //Obtener nuevas canciones(estrenos)
   getNewReleases(){
 
     const headers = new HttpHeaders({
-      'Authorization': 'Bearer BQBq5C_CyFvhyw_qTIgwhBUD7A90r96EqzZxtUQUPzWOTJCBB95T4B3QWFRxiu-yXzHCDscspccJZ_4LuGY'
+      'Authorization': 'Bearer BQCelRNclAwBmAk28lDHLC0_vN3_yfKJ_P9Fo4kzPX_fQYmdOYj6Vh_d9-e8KgB7-OEzITtEPz3VCxKbz5U'
     });
     return this.http.get('https://api.spotify.com/v1/browse/new-releases?limit=20', {headers});
-    
+  
+  }
+
+  //Obtener Artistas
+  getArtista(termino: string){
+    const headers = new HttpHeaders({
+      'Authorization': 'Bearer BQCelRNclAwBmAk28lDHLC0_vN3_yfKJ_P9Fo4kzPX_fQYmdOYj6Vh_d9-e8KgB7-OEzITtEPz3VCxKbz5U'
+    });
+    return this.http.get(`https://api.spotify.com/v1/search?q=${ termino }&type=artist&limit=25`, {headers});
   
   }
 }

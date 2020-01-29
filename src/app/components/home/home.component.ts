@@ -10,15 +10,26 @@ export class HomeComponent {
   
   nuevasCanciones: any[] = [];//Arreglo nuevasCanciones
   loading: boolean; //icono cargando
+  error: boolean;
+  mensajeError: string;
 
   constructor( private spotify: SpotifyService) {
     
     this.loading = true;
+    this.error = false;
+    
 
     this.spotify.getNewReleases()
         .subscribe((data:any) => {
           this.nuevasCanciones = data;
           this.loading = false;//quitar icono de carga
+        }, (errorServicio)=> {
+
+          this.loading = false;
+          this.error = true;
+          console.log(errorServicio);
+          this.mensajeError = errorServicio.error.error.message;
+          
         });
   }
 

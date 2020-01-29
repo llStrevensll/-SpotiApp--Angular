@@ -1,8 +1,14 @@
+<div class="col-5">
+    <h1>Busqueda: </h1>
+</div>
+
 <div class="row">
     <div class="col">
         <input #termino type="text" (keyup)="buscar(termino.value)" class="form-control" placeholder="Buscar artista..">
     </div>
 </div>
+
+
 
 <app-loading *ngIf="loading" class="m-5"></app-loading>
 

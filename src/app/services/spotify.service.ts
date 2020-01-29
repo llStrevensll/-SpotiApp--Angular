@@ -18,7 +18,7 @@ export class SpotifyService {
     const url = `https://api.spotify.com/v1/${query}`;
 
     const headers = new HttpHeaders({
-      'Authorization': 'Bearer BQCmqxn07CvVuJnWpaxceIRCZRiRbITuBqstjSFxQBDs43yoUcNGz7JcaBaNElLz6i57Bpj1yDESCj-HmEA'
+      'Authorization': 'Bearer BQBrkKSyZohpvx7zG2TU-i-r1xuv6ZfFW4vWLo23dOhgmIsVU5V0U3Mxg10Dja7CgVzVwHPAgzyyZ64qDxk'
     });
 
     return this.http.get(url, {headers}); //retorna el observable

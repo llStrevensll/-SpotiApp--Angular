@@ -42,7 +42,9 @@
                     <td>{{track.album.name}}</td>
                     <td>{{track.name}}</td>
                     <td>
-                        <audio [src]="track.preview_url" controls></audio>
+                        <!--<audio [src]="track.preview_url" controls></audio>-->
+                        <!--<iframe src="https://open.spotify.com/embed/album/3T4tUhGYeRNVUGevb0wThu" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>-->
+                        <iframe [src]="track.uri | domseguro" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                     </td>
                 </tr>
             </tbody>

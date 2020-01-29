@@ -2,6 +2,53 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
 
+- Rutas y parámetros de rutas.
+- Bootstrap 4
+- HTTP para obtener información
+- API de Spotify : Artistas, Albumes, Audio
+- Manejo de data asíncrona.
+- ngModel para enlazar campos de texto a variables del componente.
+- Widgets de Spotify
+- HTML5 audio
+- Observables
+- Maps
+
+***App***
+SpotiApp--Angular
+
+**Manejo error token**
+<p align="center">
+  <img src="https://github.com/llStrevensll/-SpotiApp--Angular/blob/master/images-git/Spotiapp1.PNG?raw=true" alt="Spotiapp1"/>
+</p>
+
+**Nuevos Lanzamientos**
+<p align="center">
+  <img src="https://github.com/llStrevensll/-SpotiApp--Angular/blob/master/images-git/Spotiapp2.PNG?raw=true" alt="Spotiapp2"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/llStrevensll/-SpotiApp--Angular/blob/master/images-git/Spotiapp3.PNG?raw=true" alt="Spotiapp3"/>
+</p>
+
+**Artista**
+<p align="center">
+  <img src="https://github.com/llStrevensll/-SpotiApp--Angular/blob/master/images-git/Spotiapp4.PNG?raw=true" alt="Spotiapp4"/>
+</p>
+
+**Busqueda Artista**
+<p align="center">
+  <img src="https://github.com/llStrevensll/-SpotiApp--Angular/blob/master/images-git/Spotiapp5.PNG?raw=true" alt="Spotiapp5"/>
+</p>
+
+**Menu responsivo**
+<p align="center">
+  <img src="https://github.com/llStrevensll/-SpotiApp--Angular/blob/master/images-git/Spotiapp6.PNG?raw=true" alt="Spotiapp6"/>
+</p>
+
+
+
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -25,3 +72,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+# SistemaVentasC#
+
+
+
+
+
+
